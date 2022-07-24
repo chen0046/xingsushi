@@ -34,8 +34,6 @@ const Navbar = () => {
         <Link to="reservation" style={{textDecoration:'none'}} className='textcolor' >Reservation</Link>
       </button>
 
-
-    
       </Toolbar>
     </AppBar>
   )

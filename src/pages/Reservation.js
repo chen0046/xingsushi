@@ -1,10 +1,14 @@
 import React from 'react'
+import { Datepicker } from '../Components/Datepicker';
 import '../css_files/aboutus.css';
+import img from '../pictures/baggrund1.png'
+
 
 export const Reservation = () => {
   return (
-    <div>
-       Reservation
+    <div style={{ backgroundImage: `url(${img})`}} className="img">
+      <Datepicker></Datepicker>
+
     </div>
   )
 }

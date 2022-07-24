@@ -1,0 +1,36 @@
+.main{
+    text-align: center;
+    color: white;
+    top:20%;
+    position: relative;
+    font-size: 20px;
+}
+.text10{
+    font-style: italic;
+    font-size: 15px;
+    color: red;
+}
+.timeinput{
+    margin-bottom:50px;
+
+}
+.confirmbutton{
+    background-color: green;
+    border-radius: 100px;
+    width: 25%;
+    font-size: 30px ;
+    font-weight: bold;
+    color: white;
+    height: 100px;
+}
+.confirmbutton:hover{
+    cursor: pointer;
+}
+.buttontext{
+    color: white;
+}
+
+.checkicon{
+    border-radius: 25px;
+    background: lightgreen;
+}

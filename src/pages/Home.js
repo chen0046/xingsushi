@@ -8,7 +8,7 @@ import { ImWink } from "react-icons/im";
 export const Home = () => {
 
   return (
-    <div style={{ backgroundImage: `url(${img})`}}>
+    <div style={{ backgroundImage: `url(${img})`}} className="img">
      <h1 className='header'>Xing Sushi</h1>
      <h2 className='header2'> <ImWink/> Best Service</h2>
      <h2 className='header2'><GiFoodTruck/> Quick Delivery</h2>

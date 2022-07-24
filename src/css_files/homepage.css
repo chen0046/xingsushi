@@ -1,5 +1,5 @@
 .header{
-    font-size: 100px;
+    font-size: 120px;
     color: white;
     padding: 10px;
     margin: auto;
@@ -7,7 +7,7 @@
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 500px;
-
+    
 }
 
 .header2{
@@ -29,7 +29,7 @@
     
     margin: 0;
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 40%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -51,7 +51,7 @@
 
     margin: 0;
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 60%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -66,4 +66,10 @@
 }
 .homebuttoncolor{
     color: white;
+}
+
+.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
