@@ -2,10 +2,19 @@ import './App.css';
 import React, { useState,useEffect } from 'react';
 import {db} from './firebase-connection';
 import {collection, getDocs ,addDoc, updateDoc, doc, deleteDoc} from 'firebase/firestore';
+import { Navbar } from './Components/Navbar';
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import { Layout } from './pages/Layout';
+import { AboutUS } from './pages/AboutUS';
+import { Home } from './pages/Home';
+import { Menu } from './pages/Menu';
+import './css_files/homepage.css';
+import { Reservation } from './pages/Reservation';
 
 
 function App() {
 
+/*
   const [users, setUsers] = useState([]);
   const UsersCollection = collection(db,"users");
 
@@ -33,15 +42,37 @@ function App() {
     
     getUsers();
    
-  },[UsersCollection]);
-
-
-
-
-  ///// UIIIIII
+ },[UsersCollection]);
+ */
+  ///// UIII
   return (
+  <div >
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path='about-us' element={<AboutUS/>}/>
+          <Route path='menu' element={<Menu/>}/>
+          <Route path='reservation' element={<Reservation/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
+   
     
-  <div className='App-header'>
+  
+
+   Put it here
+    
+     </div>
+  );
+
+}
+export default App;
+
+
+  /* 
+
     <input placeholder="name..." onChange={(event) => 
       {setNewName(event.target.value);}}/>
     <input type ="number" placeholder ="Age..."
@@ -49,9 +80,9 @@ function App() {
       {setNewAge(event.target.value);}}
     />
 
-    <button onClick={createUser}>Create User</button>
-
-     {users.map((user) => {
+   <button onClick={createUser}>Create User</button>
+  
+  {users.map((user) => {
       return(
         <div>
           {""}
@@ -60,11 +91,5 @@ function App() {
           <button onClick={()=>updateUser(user.id,user.age)}>Increase Age</button>
           <button onClick={ () => {deleteUser(user.id)}}>Delete User</button>
         </div>
-
       );
-     })} 
-     </div>
-  );
-
-}
-export default App;
+     })} */

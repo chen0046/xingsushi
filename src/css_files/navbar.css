@@ -1,0 +1,57 @@
+.Button{
+    background-color: black;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    transition-duration: 0.4s;
+    left: 25%;
+}
+.Button:hover{
+    transform: scale(1.1);
+}
+
+.logo{
+    width: 40%;
+    border-radius: 50%;
+    position: relative;
+    left: -70px;
+}
+.logo:hover{
+    transform: scale(1.2);
+
+}
+.navbar{
+    background-color:  black !important;
+    font-family: Sans-Serif;
+    text-align: center;
+    height: auto ;
+}
+
+.textcolor{
+    color: white;
+}
+.textcolor:hover{
+    color: yellow;
+    background: black;
+}
+
+.reservationbutton{
+    background-color: orange;
+    border-color: white;
+    border-radius: 100px;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    left: 1050px;
+    transition-duration: 0.4s;
+    border-width: 3px;
+
+}
+.reservationbutton:hover{
+    color: black;
+    border: black solid 1px;
+    background: black;
+    transform: scale(1.3);
+
+}

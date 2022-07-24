@@ -1,0 +1,69 @@
+.header{
+    font-size: 100px;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-shadow: 8px 2px black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 500px;
+
+}
+
+.header2{
+    font-size: 40px;
+    color: gold;
+    text-shadow: 5px 2px black;
+    text-align: center;
+    padding: -0.5rem 2rem;
+
+
+}
+.homebutton1{
+    background:transparent;
+    border-radius: 100px;
+    border-color: yellow;
+    border-width: 5px;
+    color: white;
+    font-size: 30px;
+    
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+.homebutton1:hover{
+    color: white;
+    border: yellow solid 1px;
+    background: black;
+    border-width: 3px;
+}
+
+.homebutton2{
+    background:transparent;
+    border-radius: 100px;
+    border-color: yellow;
+    border-width: 5px;
+    font-size: 30px;
+
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+ 
+
+}
+.homebutton2:hover{
+    color: white;
+    border: yellow solid 1px;
+    background: black;
+    border-width: 3px;
+}
+.homebuttoncolor{
+    color: white;
+}
