@@ -7,6 +7,7 @@ import img from '../pictures/baggrund1.png'
 export const Reservation = () => {
   return (
     <div style={{ backgroundImage: `url(${img})`}} className="img">
+      <h1 className='reservationheader'>Xing Sushi</h1>
       <Datepicker></Datepicker>
 
     </div>

@@ -1,7 +1,7 @@
 .main{
     text-align: center;
     color: white;
-    top:20%;
+    top:5%;
     position: relative;
     font-size: 20px;
 }
@@ -22,9 +22,11 @@
     font-weight: bold;
     color: white;
     height: 100px;
+    cursor: pointer;
+
 }
 .confirmbutton:hover{
-    cursor: pointer;
+    transform: scale(1.2);
 }
 .buttontext{
     color: white;
@@ -33,4 +35,11 @@
 .checkicon{
     border-radius: 25px;
     background: lightgreen;
+}
+
+.reservationheader{
+    text-align: center;
+    color: rgb(241, 191, 98);
+    font-size: 80px;
+
 }

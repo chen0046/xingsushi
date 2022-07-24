@@ -7,10 +7,8 @@ import '../css_files/navbar.css';
 const Navbar = () => {
   return (
 
-    <AppBar className='navbar' position="static">
+    <AppBar className='navbar' position="sticky">
       <Toolbar >
-
-  
       <IconButton>
         <Link to='/'>
           <img src='../Logo.png' className='logo'>
