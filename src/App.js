@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState,useEffect } from 'react';
 import {db} from './firebase-connection';
 import {collection, getDocs ,addDoc, updateDoc, doc, deleteDoc} from 'firebase/firestore';
-import { Navbar } from './Components/Navbar';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import { Layout } from './pages/Layout';
 import { AboutUS } from './pages/AboutUS';
