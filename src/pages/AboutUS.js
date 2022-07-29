@@ -2,7 +2,6 @@ import React from 'react'
 import '../css_files/aboutus.css';
 import img from '../pictures/baggrund1.png'
 import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { SiJusteat } from "react-icons/si";
 

@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useState,useEffect } from 'react';
-import {db} from './firebase-connection';
 import {collection, getDocs ,addDoc, updateDoc, doc, deleteDoc} from 'firebase/firestore';
 import {BrowserRouter, Route, Routes} from "react-router-dom"
 import { Layout } from './pages/Layout';
@@ -9,7 +8,7 @@ import { Home } from './pages/Home';
 import { Menu } from './pages/Menu';
 import './css_files/homepage.css';
 import { Reservation } from './pages/Reservation';
-
+import { ChangeReservation } from './pages/ChangeReservation'
 
 function App() {
 
@@ -33,6 +32,7 @@ function App() {
     const userDoc = doc(db,"users",id);
     await deleteDoc(userDoc);
   }
+ 
   useEffect(() =>{
     const getUsers = async () => {
       const data = await getDocs(UsersCollection);
@@ -42,7 +42,8 @@ function App() {
     getUsers();
    
  },[UsersCollection]);
- */
+  */
+
   ///// UIII
   return (
   <div >
@@ -53,11 +54,12 @@ function App() {
           <Route path='about-us' element={<AboutUS/>}/>
           <Route path='menu' element={<Menu/>}/>
           <Route path='reservation' element={<Reservation/>}/>
+          <Route path='changereservation' element={<ChangeReservation/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
 
-   
+
     
   
 
@@ -71,7 +73,17 @@ export default App;
 
 
   /* 
+        {users.map((user) => {
+      return(
+        <div>
+          {""}
+          <h1>Name: {user.name}</h1>
+          <h1>Age: {user.age}</h1>
 
+        </div>
+      );
+     })} 
+  
     <input placeholder="name..." onChange={(event) => 
       {setNewName(event.target.value);}}/>
     <input type ="number" placeholder ="Age..."

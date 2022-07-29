@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../css_files/datepicker.css';
-import Popup from 'reactjs-popup';
-import { GoCheck } from 'react-icons/go'
 import {db} from '../firebase-connection';
-import { collection, addDoc, getDocs } from 'firebase/firestore';
+import { collection, addDoc } from 'firebase/firestore';
+
 
 export const Datepicker = () => {
 
@@ -20,14 +19,6 @@ export const Datepicker = () => {
        window.alert("Your Reservation at Is Confirmed")
     };
 
-   useEffect(() =>{
-      const getUsers = async () => {
-        const data = await getDocs(reservationCollectionRef);
-        setReservation(data.docs.map((doc) => ({...doc.data(),id: doc.id})));
-      };
-      
-      getUsers();
-   },[]);
 
 
 
@@ -35,7 +26,7 @@ export const Datepicker = () => {
 
     <div className='main'>
       <h1>Please Select Number of Guests</h1>
-      <input type="number" placeholder="numberOfGuests..." 
+      <input type="number" placeholder="numberOfGuests..." min='1'
         onChange={(event) => 
       {setNewNumber(event.target.value);}}/>
       <p className='text10'>Please Contact Us If You Are More Than 10</p>
