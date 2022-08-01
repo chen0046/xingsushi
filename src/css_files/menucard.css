@@ -1,0 +1,63 @@
+.card{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 18%;
+
+}
+.card2{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 18%;
+
+}
+.card3{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 18%;
+}
+
+.seeMoreButton{
+    background-color: green;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 25px;
+    box-shadow: 2px 2px 15px green;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 88%;
+    right: 3%;
+}
+.seeMoreButton:hover{
+    transform: scale(1.1);
+}
+.seeWholeMenuButton{
+    background-color: green;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 35px;
+    color: white;
+    width: 25%;
+    box-shadow: 2px 2px 15px green;
+
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    
+}
+.seeWholeMenuButton:hover{
+    transform: scale(1.1);
+}

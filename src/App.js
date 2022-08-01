@@ -60,10 +60,7 @@ function App() {
     </BrowserRouter>
 
 
-    
-  
-
-   Put it here
+   
     
      </div>
   );

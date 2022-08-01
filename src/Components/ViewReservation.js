@@ -35,7 +35,7 @@ export const ViewReservation = () => {
          
           <button className='deletebutton' onClick={()=>{deleteReservation(reservation.id)}}>
           <Link to= '/reservation' onClick={()=>{deleteReservation(reservation.id)}} style={{textDecoration:'none'}} className='textcolor5'>
-            Delete And Create A New Reservation
+            Delete&Create A New Reservation
           </Link>
           </button>
 
