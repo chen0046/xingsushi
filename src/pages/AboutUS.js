@@ -4,6 +4,8 @@ import img from '../pictures/baggrund1.png'
 import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { SiJusteat } from "react-icons/si";
+import { GoogleMaps } from '../Components/GoogleMaps'
+
 export const AboutUS = () => {
 
   return (
@@ -21,6 +23,7 @@ export const AboutUS = () => {
         <a href="https://www.just-eat.dk/menu/xing-sushi-takeaway" target="_blank"   >
           <button className='justeatbutton'> <SiJusteat/> </button>
         </a>
+    <GoogleMaps></GoogleMaps>
     </div>
   )
 }
