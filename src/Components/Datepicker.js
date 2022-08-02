@@ -1,26 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../css_files/datepicker.css';
 import {db} from '../firebase-connection';
 import { collection, addDoc } from 'firebase/firestore';
 
 
 export const Datepicker = () => {
-
   const [newNumber,setNewNumber] =useState(0);
   const [newTime,setNewTime] =useState(0);
   const [newDate,setNewDate] = useState(Date());
   const reservationCollectionRef = collection(db,"reservations");
 
-    const [reservation,setReservation] = useState([]);
     const createReservation = async () =>{
       await addDoc(reservationCollectionRef, {numberOfGuests: Number(newNumber), date: newDate, time: newTime});
     }
     const popup =  () => {
        window.alert("Your Reservation at Is Confirmed")
     };
-
-
-
 
   return (
 

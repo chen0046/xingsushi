@@ -14,3 +14,31 @@
 .textcolor5{
     color: white;
 }
+.increasebutton{
+    background: green;
+    border-radius: 100px;
+    font-size: 20px ;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px gray;
+}
+.decreasebutton{
+    background: rgb(161, 161, 50);
+    border-radius: 100px;
+    font-size: 20px ;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px gray;
+}
+.increasebutton:hover{
+    transform: scale(1.2);
+
+}
+.decreasebutton:hover{
+    transform: scale(1.2);
+
+}
