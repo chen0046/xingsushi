@@ -97,7 +97,6 @@ export const MenuCard = () => {
           </button>
         </CardActions>
         <Popover
-
           open={open}
           anchorEl={anchorEl}
           onClose={handleClose}

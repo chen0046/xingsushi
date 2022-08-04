@@ -18,12 +18,14 @@ function App() {
 
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout/>}>
+          <Route path='/' element={<Layout/>}>
+          
           <Route index element={<Home/>}/>
           <Route path='about-us' element={<AboutUS/>}/>
           <Route path='menu' element={<Menu/>}/>
           <Route path='reservation' element={<Reservation/>}/>
           <Route path='changereservation' element={<ChangeReservation/>}/>
+          <Route path='*' element={<Home/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
